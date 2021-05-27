@@ -7,6 +7,7 @@ import "./App.scss";
 //Components
 import Header from "./components/header";
 import HTMLContent from "./components/htmlcontent";
+import Lights from "./components/lights";
 
 export default function App() {
 
@@ -18,6 +19,7 @@ export default function App() {
 
         colorManagement
         camera={{ position: [0, 0, 120], fov: 70 }}>
+        <Lights />
         <Suspense fallback={null}>
           <HTMLContent />
         </Suspense>
