@@ -14,6 +14,7 @@ import { useProgress } from "drei";
 
 // React Spring
 import { a, useTransition } from "@react-spring/web";
+import Burger from "./components/burgermenu";
 
 
 
@@ -45,6 +46,7 @@ export default function App() {
 
   return (
     <>
+      <Burger />
       <Header />
       {/* R3F Canvas */}
       <Canvas
